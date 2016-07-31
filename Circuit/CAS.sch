@@ -368,7 +368,7 @@ Wire Wire Line
 Wire Wire Line
 	6350 2800 7000 2800
 Text GLabel 7000 2800 2    60   Output ~ 0
-car_on
+main_online_n
 Connection ~ 6600 2800
 Text GLabel 1550 4000 0    60   Input ~ 0
 pwrdwn_en
@@ -544,7 +544,7 @@ Wire Notes Line
 Wire Wire Line
 	2950 5500 2950 5600
 Text GLabel 1400 5300 0    60   Input ~ 0
-car_on
+main_online_n
 Wire Notes Line
 	3700 5900 900  5900
 $Comp
@@ -649,7 +649,7 @@ Wire Wire Line
 Text GLabel 7650 4100 0    60   Input ~ 0
 online_sts
 Text GLabel 7650 4300 0    60   Input ~ 0
-car_on
+main_online_n
 Text GLabel 7650 4500 0    60   Output ~ 0
 pwrdwn_en
 Text GLabel 7650 4700 0    60   Output ~ 0

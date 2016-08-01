@@ -8,6 +8,7 @@
  */
 
 #include <avr/io.h>
+#include <avr/sleep.h>
 #include <util/delay.h>
 
 #define online_sts  PB0
@@ -50,6 +51,11 @@ void powercut (void) {
 	PORTB |= (1 << pwrcut_en);
 }
 
+void go_sleep (void) {
+	set_sleep_mode (SLEEP_MODE_PWR_DOWN);
+	sleep_mode ();
+}
+
 int main(void)
 {
 	// output pin
@@ -77,8 +83,8 @@ int main(void)
 //	wait_offline ();
 	powerdown ();
 	powercut ();
-	while (1) {
-		_delay_ms(50);
-	}
+	
+// Put MCU to sleep state to remain pin states till next restart
+	go_sleep ();
     return 0;   /* never reached */
 }

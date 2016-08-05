@@ -11,11 +11,11 @@
 #include <avr/sleep.h>
 #include <util/delay.h>
 
-#define online_sts  PB0
-#define main_pwr_on_n      PB1
-#define pwrcut_en   PB2
-#define power_en    PB3
-#define shutdown_en PB4
+#define online_sts         PB0
+#define main_pwr_on      PB1
+#define pwrcut_en          PB2
+#define power_en           PB3
+#define shutdown_en        PB4
 
 void power_up (void) {
 	PORTB |= (1 << power_en);
@@ -34,7 +34,7 @@ void wait_offline (void) {
 }
 	
 void wait_pwr_off (void) {
-	while ( (PINB & (1 << main_pwr_on_n)) == 0 ) {
+	while (PINB & (1 << main_pwr_on)) {
 		_delay_ms (250);
 	}	
 }
@@ -67,11 +67,11 @@ int main(void)
 	
 	// input pin
 	DDRB &= ~(1 << online_sts);
-	DDRB &= ~(1 << main_pwr_on_n);
+	DDRB &= ~(1 << main_pwr_on);
 	
 	// enable pull-up resistor for inputs
-	PORTB |= (1 << online_sts);
-	PORTB |= (1 << main_pwr_on_n);
+	//PORTB |= (1 << online_sts);
+	//PORTB |= (1 << main_pwr_on);
 
 	// Power up
 //	power_up ();

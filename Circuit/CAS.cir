@@ -1,0 +1,42 @@
+* /Users/hha/Scratchs/AiC/Circuit/CAS.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 2016 August 07, Sunday 17:13:20
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+RL1  5 7 7 26 RM50-xx21		
+R2  10 25 3K3		
+P2  5 11 17 CONN_01X03		
+P3  9 20 17 CONN_01X03		
+P7  7 11 17 CONN_01X03		
+R12  9 8 330		
+XU2  8 20 14 7 PC817		
+R13  11 14 1K		
+Q2  7 19 18 2N3906		
+Q3  11 16 2 2N2222		
+R3  19 12 3.6k		
+Q1  11 10 26 2N2222		
+D4  2 6 Red LED		
+R8  7 6 330		
+R9  4 11 1K		
+R10  3 1 100		
+R11  3 11 200		
+XIC1  ? 25 1 2 4 14 12 7 ATTINY13A-P		
+P4  4 3 CONN_01X02		
+P1  5 ? ? 11 17 USB_B		
+P6  9 ? ? 20 17 USB_B		
+XU1  9 ? ? ? 20 MICRO-B_USB		
+XU3  7 ? ? ? 11 MICRO-B_USB		
+P5  9 20 17 CONN_01X03		
+R7  16 11 13K		
+R5  19 7 36K		
+R6  18 15 1.3K		
+D1  7 26 D		
+R4  11 10 33K		
+R1  13 14 1K		
+D2  16 13 D		
+D3  16 15 D		
+
+.end

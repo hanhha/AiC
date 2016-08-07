@@ -1,4 +1,4 @@
-update=2016 July 30, Saturday 21:39:39
+update=2016 August 07, Sunday 20:23:57
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,4 @@ LibName28=contrib
 LibName29=valves
 LibName30=relays
 LibName31=/Users/hha/Scratchs/kicadlibrary/open-project
+LibName32=pspice

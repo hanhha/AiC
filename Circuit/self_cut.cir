@@ -1,0 +1,26 @@
+* /Users/hha/Scratchs/AiC/Circuit/self_cut.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 2016 August 07, Sunday 20:41:08
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+*.include bipolar.lib
+*.include diode.lib 
+*.include led.lib
+
+* Sheet Name: /
+* Sheet Name: /self_cut/
+Q2  14 29 28 Q2N3906		
+Q3  12 30 1 PN2222		
+R6  29 5 3.6k		
+D4  1 33 LED2		
+R10  14 33 330		
+R9  30 12 13K		
+R7  29 14 36K		
+R8  28 32 1.3K		
+R5  31 6 1K		
+D2  30 31 D1N4001		
+D3  30 32 D1N4001
+
+.end

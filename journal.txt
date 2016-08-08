@@ -1,0 +1,2 @@
+2016-08-09 00:12 Tried to simulate circuits.
+All models were avaiable but unfortunately I was not familiar with ngspice. Downloading qucs and let us check it out.
